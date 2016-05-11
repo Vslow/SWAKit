@@ -17,7 +17,7 @@ We highly recommend to use SWAKit with [Kitura](https://github.com/IBM-Swift/Kit
     let package = Package(
     name: "myFirstProject",
     dependencies: [
-        .Package(url: "https://github.com/IBM-Swift/Kitura.git", majorVersion: 0, minor: 13)
+        .Package(url: "https://github.com/IBM-Swift/Kitura.git", majorVersion: 0, minor: 13),
         .Package(url: "https://github.com/Vslow/SWAKit.git", majorVersion: 0, minor: 0)
     ])
     ```
