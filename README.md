@@ -5,7 +5,7 @@ The product is not yet ready to help you with anything.
 
 ## Installation
 
-We highly recommend to use it with [Kitura](https://github.com/IBM-Swift/Kitura).
+We highly recommend to use SWAKit with [Kitura](https://github.com/IBM-Swift/Kitura).
 
 1. Follow [Kitura installation instructions](https://github.com/IBM-Swift/Kitura#swift-version).
 2. Create [Kitura web application project](https://github.com/IBM-Swift/Kitura#developing-kitura-applications).
@@ -17,8 +17,8 @@ We highly recommend to use it with [Kitura](https://github.com/IBM-Swift/Kitura)
     let package = Package(
     name: "myFirstProject",
     dependencies: [
-    .Package(url: "https://github.com/IBM-Swift/Kitura.git", majorVersion: 0, minor: 13)
-    .Package(url: "https://github.com/Vslow/SWAKit.git", majorVersion: 0, minor: 0)
+        .Package(url: "https://github.com/IBM-Swift/Kitura.git", majorVersion: 0, minor: 13)
+        .Package(url: "https://github.com/Vslow/SWAKit.git", majorVersion: 0, minor: 0)
     ])
     ```
 4. Import the SWAKit module in your code (Sources/main.swift):
@@ -57,4 +57,4 @@ We highly recommend to use it with [Kitura](https://github.com/IBM-Swift/Kitura)
 
 ## License
 
-This library is licensed under MIT License.
+This library is licensed under MIT License. Full license text is available in [LICENSE](LICENSE.txt).
