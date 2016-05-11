@@ -8,8 +8,8 @@ The product is not yet ready to help you with anything.
 We highly recommend to use it with [Kitura](https://github.com/IBM-Swift/Kitura).
 
 1. Follow [Kitura installation instructions](https://github.com/IBM-Swift/Kitura#swift-version).
-2. Create [Kitura web application](https://github.com/IBM-Swift/Kitura#developing-kitura-applications).
-3. Now we add Kitura as a dependency for your project (Package.swift):
+2. Create [Kitura web application project](https://github.com/IBM-Swift/Kitura#developing-kitura-applications).
+3. Now we add SWAKit as a dependency for your project (Package.swift):
     
     ```swift
     import PackageDescription
