@@ -56,14 +56,14 @@ We highly recommend to use SWAKit with [Kitura](https://github.com/IBM-Swift/Kit
     ```
 6. Compile your application:
 
-- Mac OS X: `swift build`
-- Linux: `swift build -Xcc -fblocks -Xlinker -rpath -Xlinker .build/debug`
+    - Mac OS X: `swift build`
+    - Linux: `swift build -Xcc -fblocks -Xlinker -rpath -Xlinker .build/debug`
 
 9. Now run your new web application:
 
-```bash
-.build/debug/myFirstProject
-```
+    ```bash
+    .build/debug/myFirstProject
+    ```
 
 10. Open your browser at [http://localhost:8090](http://localhost:8090)
 
