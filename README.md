@@ -10,7 +10,7 @@ We highly recommend to use it with [Kitura](https://github.com/IBM-Swift/Kitura)
 1. Follow [Kitura installation instructions](https://github.com/IBM-Swift/Kitura#swift-version).
 2. Create [Kitura web application](https://github.com/IBM-Swift/Kitura#developing-kitura-applications).
 3. Now we add Kitura as a dependency for your project (Package.swift):
-` swift
+``` swift
 import PackageDescription
 
 let package = Package(
@@ -19,16 +19,16 @@ dependencies: [
 .Package(url: "https://github.com/IBM-Swift/Kitura.git", majorVersion: 0, minor: 13)
 .Package(url: "https://github.com/Vslow/SWAKit.git", majorVersion: 0, minor: 0)
 ])
-`
+```
 4. Import the modules in your code (Sources/main.swift):
-` swift
+``` swift
 import Kitura
 import KituraNet
 import KituraSys
 import SWAKit
-`
+```
 5. Start using SWAKit in your application. Example of Sources/main.swift file:
-` swift
+``` swift
 import Kitura
 import KituraNet
 import KituraSys
@@ -50,7 +50,7 @@ next()
 
 let server = HTTPServer.listen(port: 8090, delegate: router)
 Server.run()
-`
+```
 
 ## License
 
