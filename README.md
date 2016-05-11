@@ -57,4 +57,4 @@ We highly recommend to use SWAKit with [Kitura](https://github.com/IBM-Swift/Kit
 
 ## License
 
-This library is licensed under MIT License. Full license text is available in [LICENSE](LICENSE.txt).
+This library is licensed under MIT License. Full license text is available in [LICENSE](LICENSE).
