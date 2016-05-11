@@ -3,7 +3,7 @@ Server-side Swift web application library
 
 The product is not yet ready to help you with anything.
 
-## Installation
+## How to use
 
 We highly recommend to use SWAKit with [Kitura](https://github.com/IBM-Swift/Kitura).
 
