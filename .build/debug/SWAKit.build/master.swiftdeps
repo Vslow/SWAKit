@@ -1,0 +1,10 @@
+version: "Apple Swift version 3.0-dev (LLVM dffa09ffd8, Clang 1e6cba3ce3, Swift d2aee43220)"
+options: "cd5f769f1654e2ec9a1fb1e3cc75dbf4"
+build_time: [516272372, 903141000]
+inputs:
+  "/Users/Vslow/Documents/SWAKit/Sources/SWAKit/Action.swift": [515690001, 0]
+  "/Users/Vslow/Documents/SWAKit/Sources/SWAKit/WebApp.swift": [516272281, 0]
+  "/Users/Vslow/Documents/SWAKit/Sources/SWAKit/WebObjects/Button.swift": [515690001, 0]
+  "/Users/Vslow/Documents/SWAKit/Sources/SWAKit/WebObjects/Field.swift": [514654661, 0]
+  "/Users/Vslow/Documents/SWAKit/Sources/SWAKit/WebObjects/Form.swift": [514655805, 0]
+  "/Users/Vslow/Documents/SWAKit/Sources/SWAKit/WebObjects/WebObject.swift": [516231352, 0]
