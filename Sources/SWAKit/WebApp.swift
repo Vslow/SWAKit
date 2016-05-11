@@ -22,7 +22,7 @@ public class WebApp {
 
         var responseBody = ""
 
-        responseBody += makeHTMLStructureTop(self.title)
+        responseBody += makeHTMLStructureTop(pageTitle: self.title)
         //content part is under development
         responseBody += "<p>Hello, World!</p>"
         responseBody += makeHTMLStructureBottom()
