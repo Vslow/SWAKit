@@ -21,7 +21,7 @@ We highly recommend to use it with [Kitura](https://github.com/IBM-Swift/Kitura)
     .Package(url: "https://github.com/Vslow/SWAKit.git", majorVersion: 0, minor: 0)
     ])
     ```
-4. Import the modules in your code (Sources/main.swift):
+4. Import the SWAKit module in your code (Sources/main.swift):
     
     ```swift
     import Kitura
