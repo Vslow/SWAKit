@@ -3,9 +3,9 @@ Server-side Swift web application library
 
 The product is not yet ready to help you with anything.
 
-## How to use
+## How to use with Kitura locally
 
-We highly recommend to use SWAKit with [Kitura](https://github.com/IBM-Swift/Kitura).
+Locally We highly recommend using SWAKit with [Kitura](https://github.com/IBM-Swift/Kitura).
 
 1. Follow [Kitura installation instructions](https://github.com/IBM-Swift/Kitura#swift-version).
 
@@ -68,6 +68,41 @@ We highly recommend to use SWAKit with [Kitura](https://github.com/IBM-Swift/Kit
     ```
 
 10. Open your browser at [http://localhost:8090](http://localhost:8090)
+
+## How to use it in IBM Bluemix
+
+You can use this framework in IBM Bluemix CF Swift app.
+
+1. Create [IBM Bluemix](https://console.ng.bluemix.net/registration/) account (if you aren't already).
+
+2. install the [IBM® Bluemix®](http://clis.ng.bluemix.net/ui/home.html) and [Cloud Foundry command line](https://github.com/cloudfoundry/cli/releases) interfaces
+
+3. In CLI connect to IBM® Bluemix® `bluemix api https://api.eu-gb.bluemix.net`
+
+4. Log in to Bluemix `bluemix login -u mail@mail.com -o username -s space_name`
+
+5. Push Swift HelloWorld application to Bluemix, please use the following command `cf push -b https://github.com/IBM-Swift/swift-buildpack.git`
+
+6. Find you app in bluemix, edit `Package.swift` file in convinient for you way. Add `.Package(url: "https://github.com/Vslow/SWAKit.git", majorVersion: 0, minor: 0)` to dependencies. Your `Package.swift` should look like:
+
+``` swift
+import PackageDescription
+
+let package = Package(
+  name: "HelloWorldSwift",
+  targets: [
+    Target(name: "Utils", dependencies: []),
+    Target(name: "Server", dependencies: [.Target(name: "Utils")])
+  ],
+  dependencies: [
+      .Package(url: "https://github.com/IBM-Swift/Swift-cfenv.git", majorVersion: 1, minor: 0),
+      .Package(url: "https://github.com/Vslow/SWAKit.git", majorVersion: 0, minor: 0)
+    ],
+  testDependencies: []
+)
+```
+
+7. Push changes and rebuild your app.
 
 ## License
 
