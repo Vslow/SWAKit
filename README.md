@@ -75,11 +75,11 @@ You can use this framework in IBM Bluemix CF Swift app.
 
 1. Create [IBM Bluemix](https://console.ng.bluemix.net/registration/) account (if you aren't already).
 
-2. install the [IBM® Bluemix®](http://clis.ng.bluemix.net/ui/home.html) and [Cloud Foundry command line](https://github.com/cloudfoundry/cli/releases) interfaces
+2. Install the [IBM® Bluemix®](http://clis.ng.bluemix.net/ui/home.html) and [Cloud Foundry command line](https://github.com/cloudfoundry/cli/releases) interfaces.
 
-3. In CLI connect to IBM® Bluemix® `bluemix api https://api.eu-gb.bluemix.net`
+3. In CLI connect to IBM® Bluemix® `bluemix api https://api.eu-gb.bluemix.net`.
 
-4. Log in to Bluemix `bluemix login -u mail@mail.com -o username -s space_name`
+4. Log in to Bluemix `bluemix login -u mail@mail.com -o username -s space_name`.
 
 5. Clone swift-hellowworld develop branch. On Linux/OS X `git clone -b develop https://github.com/IBM-Bluemix/swift-helloworld.git`.
 
