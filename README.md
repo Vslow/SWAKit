@@ -81,9 +81,13 @@ You can use this framework in IBM Bluemix CF Swift app.
 
 4. Log in to Bluemix `bluemix login -u mail@mail.com -o username -s space_name`
 
-5. Push Swift HelloWorld application to Bluemix, please use the following command `cf push -b https://github.com/IBM-Swift/swift-buildpack.git`
+5. Clone swift-hellowworld develop branch. On Linux/OS X `git clone -b develop https://github.com/IBM-Bluemix/swift-helloworld.git`.
 
-6. Find you app in bluemix, edit `Package.swift` file in convenient for you way. Add `.Package(url: "https://github.com/Vslow/SWAKit.git", majorVersion: 0, minor: 0)` to dependencies. Your `Package.swift` should look like:
+6. Push Swift HelloWorld application to Bluemix, please use the following command `cf push -b https://github.com/IBM-Swift/swift-buildpack.git`.
+
+7. Check, that your app is working.
+
+8. Find you app in bluemix, edit `Package.swift` file in convenient for you way. Add `.Package(url: "https://github.com/Vslow/SWAKit.git", majorVersion: 0, minor: 0)` to dependencies. Your `Package.swift` should look like:
 
 ``` swift
 import PackageDescription
@@ -102,7 +106,7 @@ let package = Package(
 )
 ```
 
-7. Push changes and rebuild your app.
+9. Push changes and rebuild your app.
 
 ## License
 
