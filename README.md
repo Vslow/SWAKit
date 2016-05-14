@@ -108,6 +108,6 @@ You can use this framework in IBM Bluemix CF Swift app.
 
 8. Check, that your app is working. SWAKit should be working.
 
-## License
+## Copyright and License
 
-This library is licensed under MIT License. Full license text is available in [LICENSE](LICENSE).
+Copyright Vasiliy Kharitonov under the [MIT license](LICENSE).
