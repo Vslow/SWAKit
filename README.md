@@ -3,6 +3,12 @@ Server-side Swift web application library
 
 The product is not yet ready to help you with anything.
 
+## Table of contents
+
+- [How to use with Kitura locally](#how-to-use-with-kitura-locally)
+- [How to use in IBM Bluemix](#how-to-use-in-ibm-bluemix)
+- [Copyright and License](#copyright-and-license)
+
 ## How to use with Kitura locally
 
 Locally We highly recommend using SWAKit with [Kitura](https://github.com/IBM-Swift/Kitura).
@@ -69,7 +75,7 @@ Locally We highly recommend using SWAKit with [Kitura](https://github.com/IBM-Sw
 
 10. Open your browser at [http://localhost:8090](http://localhost:8090)
 
-## How to use it in IBM Bluemix
+## How to use in IBM Bluemix
 
 You can use this framework in IBM Bluemix CF Swift app.
 
