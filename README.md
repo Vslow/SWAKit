@@ -48,8 +48,10 @@ Locally We highly recommend using SWAKit with [Kitura](https://github.com/IBM-Sw
     let router = Router()
 
     let myApp = WebApp(title: "Hello World App")
-    let testForm = Form(id: "testForm")
-    myApp.add(testForm)
+    let testBlock = Block(id: "testForm")
+    testBlock.title = "My App Main console"
+    testBlock.icon = "Home"
+    myApp.add(testBlock)
 
     let htmlBody = myApp.makeHTMLBody()
 
