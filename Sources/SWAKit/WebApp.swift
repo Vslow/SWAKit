@@ -2,7 +2,7 @@
  ** SWAKit
  ** Server-side Swift web application library
  **
- ** Vasiliy Kharitonov
+ ** © Vasiliy Kharitonov, MIT license
  ** 2016-04-21
  **/
 
