@@ -7,9 +7,9 @@
  **/
 
 public class Field: WebObject {
-    var label: String
-    var value: String
-    var placeholder: String?
+    public var label: String
+    public var value: String
+    public var placeholder: String?
     
     public init(id: String, label: String, value: String, placeholder: String?) {
         self.label = label

@@ -12,9 +12,9 @@ public enum FormType {
 
 public class Block: WebObject {
     let type: FormType
-    var content = [ WebObject ]()
-    var title = ""
-    var icon = ""
+    public var content = [ WebObject ]()
+    public var title = ""
+    public var icon = ""
     
     public override init(id: String) {
         self.type = FormType.standard

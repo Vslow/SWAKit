@@ -9,7 +9,7 @@
 // version 0.1
 
 public class WebObject {
-    let id: String
+    public let id: String
     
     public func makeHTML() -> String {
         return "Use web objects to get something usefull"

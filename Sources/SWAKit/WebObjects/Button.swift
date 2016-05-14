@@ -7,8 +7,8 @@
  **/
 
 public class Button: WebObject {
-    var text: String
-    var action: Action
+    public var text: String
+    public var action: Action
     
     public override func makeHTML()->String {
         var html = ""
