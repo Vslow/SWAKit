@@ -89,7 +89,7 @@ You can use this framework in IBM Bluemix CF Swift app.
 
 4. Log in to Bluemix `bluemix login -u mail@mail.com -o username -s space_name`.
 
-5. Clone swift-hellowworld develop branch. On Linux/OS X `git clone -b develop https://github.com/IBM-Bluemix/swift-helloworld.git`.
+5. Clone swift-helloworld develop branch. On Linux/OS X `git clone -b develop https://github.com/IBM-Bluemix/swift-helloworld.git`.
 
 6. Edit `Package.swift` file: add `.Package(url: "https://github.com/Vslow/SWAKit.git", majorVersion: 0, minor: 0)` to dependencies. Your `Package.swift` should look like:
 
