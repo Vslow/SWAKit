@@ -10,13 +10,13 @@ public class Button: WebObject {
     public var text: String
     public var action: Action
     
-    public override func makeHTML()->String {
+    public override func makeHTML() -> String {
         var html = ""
         
         if self.action.actionType == ActionType.httpTransition {
             html = "<a href='\(self.action.actionBody)' class='uk-button'>" +
                 self.text +
-                "</a>"
+            "</a>"
         }
         
         return html
