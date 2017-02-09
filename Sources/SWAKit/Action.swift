@@ -13,7 +13,7 @@ public enum ActionType {
     case ajax
 }
 
-public class Action {
+open class Action {
     let name: String
     let actionType: ActionType
     let actionBody: String

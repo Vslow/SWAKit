@@ -6,11 +6,11 @@
  ** 2016-04-22
  **/
 
-public class Button: WebObject {
-    public var text: String
-    public var action: Action
+open class Button: WebObject {
+    open var text: String
+    open var action: Action
     
-    public override func makeHTML() -> String {
+    open override func makeHTML() -> String {
         var html = ""
         
         if self.action.actionType == ActionType.httpTransition {

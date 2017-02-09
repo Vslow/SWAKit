@@ -8,10 +8,10 @@
 
 // version 0.1
 
-public class WebObject {
-    public let id: String
+open class WebObject {
+    open let id: String
     
-    public func makeHTML() -> String {
+    open func makeHTML() -> String {
         return "Use web objects to get something usefull"
     }
     

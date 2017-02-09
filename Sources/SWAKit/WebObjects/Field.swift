@@ -6,10 +6,10 @@
  ** 2016-04-22
  **/
 
-public class Field: WebObject {
-    public var label: String
-    public var value: String
-    public var placeholder: String?
+open class Field: WebObject {
+    open var label: String
+    open var value: String
+    open var placeholder: String?
     
     public init(id: String, label: String, value: String, placeholder: String?) {
         self.label = label

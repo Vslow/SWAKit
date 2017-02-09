@@ -9,7 +9,7 @@
 public func makeHTMLUIkit(webObjet: WebObject) -> String {
     var html = ""
     
-    var html = "Not yet ready"
+    html = "Not yet ready"
     /** if webObjet = Button {
         if webObjet.action.actionType == ActionType.httpTransition {
             html = "<a href='\(webObjet.action.actionBody)' class='uk-button'>" +

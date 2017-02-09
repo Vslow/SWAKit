@@ -10,11 +10,11 @@ public enum FormType {
     case standard
 }
 
-public class Block: WebObject {
+open class Block: WebObject {
     let type: FormType
-    public var content = [ WebObject ]()
-    public var title = ""
-    public var icon = ""
+    open var content = [ WebObject ]()
+    open var title = ""
+    open var icon = ""
     
     public override init(id: String) {
         self.type = FormType.standard

@@ -8,21 +8,21 @@
 
 import Foundation
 
-public class WebApp {
+open class WebApp {
     // Main application class
     let title: String
     var content = [ WebObject ]()
     
-    public func add(webObject: WebObject) {
+    open func add(_ webObject: WebObject) {
         self.content.append(webObject)
     }
     
-    public func makeHTMLBody() -> String {
+    open func makeHTMLBody() -> String {
         //Makes full HTML5 body
 
         var responseBody = ""
 
-        responseBody += makeHTMLStructureTop(pageTitle: self.title)
+        responseBody += makeHTMLStructureTop(self.title)
         //content part is under development
         responseBody += "<p>Hello, World!</p>"
         responseBody += makeHTMLStructureBottom()
@@ -30,7 +30,7 @@ public class WebApp {
         return responseBody
     }
     
-    public func makeHTTPResponse() -> String {
+    open func makeHTTPResponse() -> String {
         //Makes full HTTP Response ready to send
         
         var httpResponse = ""
@@ -50,7 +50,7 @@ public class WebApp {
     }
 }
 
-func makeHTMLStructureTop(pageTitle: String) -> String {
+func makeHTMLStructureTop(_ pageTitle: String) -> String {
     //Makes some basic HTML5 document structure with UIKit
     
     let topStructure = "<!DOCTYPE html>" +
