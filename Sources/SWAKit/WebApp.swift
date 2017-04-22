@@ -13,7 +13,7 @@ public var currentPageTitle = ""
 open class WebApp {
     // Main application class
     let title: String
-    var ui: UserInterface
+    var ui: SWAUserInterface
     var content = [ WebObject ]()
     
     open func add(_ webObject: WebObject) {
@@ -50,13 +50,13 @@ open class WebApp {
         return httpResponse
     }
     
-    public init(title: String, userInterface: UserInterface?) {
+    public init(title: String, userInterface: SWAUserInterface?) {
         
         //Initializing of user interface
-        if let userInterface = userInterface {
-            self.ui = userInterface
+        if let i_userInterface = userInterface {
+            self.ui = i_userInterface
         } else {
-            let simpleUI = UserInterface(cssUrls: nil, javascriptUrls: nil)
+            let simpleUI = SWAUserInterface(cssUrls: nil, javascriptUrls: nil)
             self.ui = simpleUI
         }
         

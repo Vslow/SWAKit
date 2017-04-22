@@ -15,7 +15,7 @@ let uiKitJS = [ "https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.j
                 "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.21/js/uikit-icons.min.js" ]
 
 //Creation of UIKit User Interface
-public var UIKit = UserInterface(cssUrls: uiKitCSS, javascriptUrls: uiKitJS)
+public var UIKit = SWAUserInterface(cssUrls: uiKitCSS, javascriptUrls: uiKitJS)
 
 
 public func makeHTMLUIkit(webObject: WebObject) -> String {

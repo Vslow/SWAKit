@@ -6,7 +6,7 @@
  ** 2017-04-22
  **/
 
-open class UserInterface {
+open class SWAUserInterface {
     
     var topStructure: String
     var botStructure: String
