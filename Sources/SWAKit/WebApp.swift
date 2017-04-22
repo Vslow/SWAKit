@@ -8,9 +8,12 @@
 
 import Foundation
 
+public var currentPageTitle = ""
+
 open class WebApp {
     // Main application class
     let title: String
+    var ui: UserInterface
     var content = [ WebObject ]()
     
     open func add(_ webObject: WebObject) {
@@ -22,10 +25,12 @@ open class WebApp {
 
         var responseBody = ""
 
-        responseBody += makeHTMLStructureTop(self.title)
+        responseBody += ui.topStructure
+        
         //content part is under development
         responseBody += "<p>Hello, World!</p>"
-        responseBody += makeHTMLStructureBottom()
+        
+        responseBody += ui.botStructure
 
         return responseBody
     }
@@ -45,38 +50,16 @@ open class WebApp {
         return httpResponse
     }
     
-    public init(title: String) {
+    public init(title: String, userInterface: UserInterface?) {
+        
+        //Initializing of user interface
+        if let userInterface = userInterface {
+            self.ui = userInterface
+        } else {
+            let simpleUI = UserInterface(cssUrls: nil, javascriptUrls: nil)
+            self.ui = simpleUI
+        }
+        
         self.title = title
     }
-}
-
-func makeHTMLStructureTop(_ pageTitle: String) -> String {
-    //Makes some basic HTML5 document structure with UIKit
-    
-    let topStructure = "<!DOCTYPE html>" +
-        "<html>" +
-        "<head>" +
-        "<meta charset='utf-8'>" +
-        "<title>" +
-        pageTitle +
-        "</title>" +
-        "</head>" +
-        "<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/uikit/2.26.2/css/uikit.almost-flat.min.css'>" +
-        "<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>" +
-        "<script src='https://cdnjs.cloudflare.com/ajax/libs/uikit/2.26.2/js/uikit.min.js'></script>" +
-        "<body>" +
-        "<div class='uk-container uk-container-center'>"
-    
-    
-    return topStructure
-}
-
-func makeHTMLStructureBottom() -> String {
-    //Makes some basic HTML5 document structure
-    
-    let bottomStructure =   "</div>" +
-        "</body>" +
-        "</html>"
-    
-    return bottomStructure
 }
